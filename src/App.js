@@ -120,14 +120,12 @@ function App() {
   return (
     <div className="container mt-5">
       {error && (
-        <div className="alert alert-danger" role="alert">
+        <div className="alert alert-danger text-break" role="alert">
           {error}
         </div>
       )}
       {token && (
         <div>
-          <h2>Token de Autenticación:</h2>
-          <p>{token}</p>
           <h2>Datos de Usuario:</h2>
           <table {...getTableProps()} className="table table-bordered table-hover">
             <thead className="thead-dark">
