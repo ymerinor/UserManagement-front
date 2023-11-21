@@ -29,7 +29,7 @@ function App() {
       setToken(authToken);
       console.log('Inicio de sesión exitoso. Token:', authToken);
     } catch (error) {
-      setError('Error al iniciar sesión. Verifica las credenciales.');
+      setError('A ocurrido un error al iniciar sesion.');
       console.error('Error al iniciar sesión:', error.message);
     }
   };
